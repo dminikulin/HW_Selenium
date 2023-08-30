@@ -1,0 +1,429 @@
+{
+  "id": "467064d8-ae7c-4926-bf74-7a8ee09b81f3",
+  "version": "2.0",
+  "name": "HW_Selenium",
+  "url": "https://pigu.lt",
+  "tests": [{
+    "id": "04f963fd-630d-49ab-b566-693ba545c70f",
+    "name": "Find an item from search and add it to cart",
+    "commands": [{
+      "id": "cb7344b2-e2d9-4486-9b48-4a20b7ee1ae1",
+      "comment": "",
+      "command": "open",
+      "target": "/ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "429f96d1-0cd5-4070-879c-cde5f9460987",
+      "comment": "",
+      "command": "store",
+      "target": "iphone 14 pro",
+      "targets": [],
+      "value": "searchprompt"
+    }, {
+      "id": "689c5bbb-eb88-42bb-8a3b-63d16a55c7ab",
+      "comment": "",
+      "command": "echo",
+      "target": "${searchprompt}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2760f85-ee85-4308-82ae-d03844192a41",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1792x1095",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b549840-57fb-4542-b2ca-237ef0075f4d",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=q", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//form[@id='main-search-form']/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c1ce61e-32a2-4f19-9486-fc3f468dc3da",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchInput",
+      "targets": [],
+      "value": "${searchprompt}"
+    }, {
+      "id": "4ab0c22e-d8f7-4ea8-8b0a-4d0fa3006886",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//*[@id=\"main-search-form\"]/span/span/div/div[1]/div[5]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3d7db5eb-468b-4c80-ae72-b8185f275885",
+      "comment": "",
+      "command": "click",
+      "target": "//*[@id=\"main-search-form\"]/span/span/div/div[1]/div[5]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a403923-8045-4a0f-bd5f-2fb96389f89c",
+      "comment": "",
+      "command": "click",
+      "target": "//*[@id=\"productBlock71765043\"]/div/div/div[3]/a/img[1]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7669b795-dfa4-4ebe-bd04-7c5355944490",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//img[@alt='Apple iPhone 14 Pro, 15,5 см (6,1 дюйма), две SIM-карты, iOS 16, 5G, 128 ГБ, серебристый']",
+      "targets": [
+        ["css=#widget-1c0-b7-ts-f7-p-96-i-9c2-g-2-u-44-fb2 > img", "css:finder"],
+        ["xpath=//img[@alt='Apple iPhone 14 Pro, 15,5 см (6,1 дюйма), две SIM-карты, iOS 16, 5G, 128 ГБ, серебристый']", "xpath:img"],
+        ["xpath=//a[@id='widget-1c0-b7-ts-f7-p-96-i-9c2-g-2-u-44-fb2']/img", "xpath:idRelative"],
+        ["xpath=//a[4]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fcf8731-26e8-4421-ac8f-3372636dbc91",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//img[@alt='Apple iPhone 14 Pro, 15,5 см (6,1 дюйма), две SIM-карты, iOS 16, 5G, 128 ГБ, серебристый']",
+      "targets": [
+        ["css=#widget-5da-e1-ts-ab-p-d9-i-e9d-g-a-u-c6-d90 > img", "css:finder"],
+        ["xpath=//img[@alt='Apple iPhone 14 Pro, 15,5 см (6,1 дюйма), две SIM-карты, iOS 16, 5G, 128 ГБ, серебристый']", "xpath:img"],
+        ["xpath=//a[@id='widget-5da-e1-ts-ab-p-d9-i-e9d-g-a-u-c6-d90']/img", "xpath:idRelative"],
+        ["xpath=//a[4]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f55d4d5f-7013-45e1-a33f-8dd6277b9a9b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.c-product__controls > .c-btn--primary",
+      "targets": [
+        ["css=.c-product__controls > .c-btn--primary", "css:finder"],
+        ["xpath=//div[@id='product-sidebar']/div/div[6]/div/div", "xpath:idRelative"],
+        ["xpath=//div/div[6]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e5774fd-e6bd-455b-9933-1ea3a75efba2",
+      "comment": "",
+      "command": "click",
+      "target": "//*[@id=\"close\"]",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c24101ec-1c5f-4a50-91f6-fa100883da3b",
+    "name": "Log in (with invalid data)",
+    "commands": [{
+      "id": "972b4d66-9933-4994-9279-d407e9440af9",
+      "comment": "",
+      "command": "open",
+      "target": "/ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1dec245e-6839-461c-86aa-67b0cac9e2ce",
+      "comment": "",
+      "command": "store",
+      "target": "dima@domain.com",
+      "targets": [],
+      "value": "email"
+    }, {
+      "id": "702229d7-d3fb-4aa9-8284-498c650a2192",
+      "comment": "",
+      "command": "echo",
+      "target": "${email}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2bdf377-cadd-4865-8947-b5d4e62f7c10",
+      "comment": "",
+      "command": "store",
+      "target": "root",
+      "targets": [],
+      "value": "password"
+    }, {
+      "id": "efb92dd4-680a-4186-8be8-1ce278511fe5",
+      "comment": "",
+      "command": "echo",
+      "target": "${password}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9bbc8ea2-5d36-4169-9783-b7cadfb6a64f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "//*[@id=\"headeMenu\"]/li[1]/a/i",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9027d534-6592-4734-8af9-f3365945e5d2",
+      "comment": "",
+      "command": "click",
+      "target": "//*[@id=\"headeMenu\"]/li[1]/div/div/div[2]/a[1]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a31c0ac4-133a-4e86-9d56-0240ce82bb6a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login-details .has-icon > input",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.login-details .has-icon > input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='loginModal']/div/div/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b67c83fd-9131-4d4b-a01f-37a7af11d06f",
+      "comment": "",
+      "command": "type",
+      "target": "css=.login-details .has-icon > input",
+      "targets": [],
+      "value": "${email}"
+    }, {
+      "id": "39c255da-45e6-47cd-bfd3-a66e42b9cdb5",
+      "comment": "",
+      "command": "click",
+      "target": "css=#passwordCont > input",
+      "targets": [
+        ["name=password", "name"],
+        ["css=#passwordCont > input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='passwordCont']/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70c43ea9-b73f-4fdb-9eae-f24f15d7e769",
+      "comment": "",
+      "command": "type",
+      "target": "css=#passwordCont > input",
+      "targets": [],
+      "value": "${password}"
+    }, {
+      "id": "3135cee4-f108-473c-adbb-34f79d9ae323",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@name='login']",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.form-controls:nth-child(8) > .btn", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//div[@id='loginModal']/div/div/form/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "0b94ee7b-875d-4c7f-a480-b9b1c57c2cd5",
+    "name": "Pagination",
+    "commands": [{
+      "id": "b2490ff8-809a-47a9-ab13-013580af5f81",
+      "comment": "",
+      "command": "open",
+      "target": "/ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66977cda-02f1-4916-9380-8f14071e05da",
+      "comment": "",
+      "command": "store",
+      "target": "5",
+      "targets": [],
+      "value": "howMuchPages"
+    }, {
+      "id": "3c96fe31-8fee-4e73-842f-df5344e9ee15",
+      "comment": "",
+      "command": "echo",
+      "target": "${howMuchPages}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27dd900a-f9ca-4a74-a2bb-e2cadb50ec62",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//li[@id='department-320']/a/span",
+      "targets": [
+        ["css=#department-320 span", "css:finder"],
+        ["xpath=//li[@id='department-320']/a/span", "xpath:idRelative"],
+        ["xpath=//div/div/ul/li[8]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Мобильные телефоны, Фото и Видео')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b333982-a70c-4d92-9985-9eb57b99c201",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//li[@id='department-320']/a/span",
+      "targets": [
+        ["css=#department-320 span", "css:finder"],
+        ["xpath=//li[@id='department-320']/a/span", "xpath:idRelative"],
+        ["xpath=//div/div/ul/li[8]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Мобильные телефоны, Фото и Видео')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f9ecb23-e779-403a-8307-dfde048e2907",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//li[@id='department-320']/div/div[2]/div/ul/li[14]/a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48508103-030b-4f80-ab0e-9f9c151c9ba8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//li[@id='department-320']/div/div[2]/div/ul/li[14]/a",
+      "targets": [
+        ["linkText=Наушники", "linkText"],
+        ["css=#department-320 .col-1-of-5:nth-child(1) li:nth-child(14) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Наушники')])[4]", "xpath:link"],
+        ["xpath=//li[@id='department-320']/div/div[2]/div/ul/li[14]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://pigu.lt/ru/kompyutery/vneshnie-aksessuary-dlya-kompyuterov/naushniki-mikrofony')])[4]", "xpath:href"],
+        ["xpath=//li[8]/div/div[2]/div/ul/li[14]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9201eb66-86d2-440d-a12a-eb8fcdadc4c3",
+      "comment": "",
+      "command": "times",
+      "target": "${howMuchPages}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "00af5ff1-c19f-4ff6-94ec-4c951d4e6494",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(17) > .c-icon--chevron-right-small",
+      "targets": [
+        ["css=a:nth-child(17) > .c-icon--chevron-right-small", "css:finder"],
+        ["xpath=//div[@id='pagination']/span/span/a[17]/i", "xpath:idRelative"],
+        ["xpath=//a[17]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "83532bb1-42dc-4700-a718-945c3d31d6a5",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d73144d0-fda6-4f5c-a986-873a065d5868",
+      "comment": "",
+      "command": "times",
+      "target": "3",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb3d5477-4de2-47e7-955c-8af5c17ef383",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ignore-childs .c-icon--chevron-left-small",
+      "targets": [
+        ["css=.ignore-childs .c-icon--chevron-left-small", "css:finder"],
+        ["xpath=//div[@id='pagination']/span/span/a/i", "xpath:idRelative"],
+        ["xpath=//span/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8660ccff-5e4e-41a4-b7ad-d745ef526e73",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2006c67d-fd2d-496f-9aee-c901a1f07be4",
+    "name": "Select a specific item in catalog",
+    "commands": [{
+      "id": "b74df9c1-b7e4-4cc7-86ca-9c92bf693621",
+      "comment": "",
+      "command": "open",
+      "target": "/ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82178d26-1fc8-4c8b-a228-fb01f36ae744",
+      "comment": "",
+      "command": "store",
+      "target": "6",
+      "targets": [],
+      "value": "pageNum"
+    }, {
+      "id": "b93b56a5-6bce-4097-b8c1-222375b9617b",
+      "comment": "",
+      "command": "echo",
+      "target": "${pageNum}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c5013e4-0712-4553-b118-2ed0bc4301d5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#department-320 span",
+      "targets": [
+        ["css=#department-320 span", "css:finder"],
+        ["xpath=//li[@id='department-320']/a/span", "xpath:idRelative"],
+        ["xpath=//div/div/ul/li[8]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Мобильные телефоны, Фото и Видео')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6fd012e-beba-4c52-a4c4-183f0c295a92",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#department-320 span",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6263f06b-e19c-43a5-896e-8289f85129bc",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//li[@id='department-320']/div/div[2]/div/ul/li[14]/a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f5f310bc-d766-441e-b895-bb41f83620a2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//li[@id='department-320']/div/div[2]/div/ul/li[14]/a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b9273a1-52b2-45a5-a5d8-f8b0fc8c7810",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[${pageNum}]/div/div/div[3]/a/img",
+      "targets": [
+        ["css=#\\_5productBlock25658890 .main-image", "css:finder"],
+        ["xpath=//img[@alt='Apple AirPods with Charging Case MV7N2ZM/A цена и информация | Наушники | pigu.lt']", "xpath:img"],
+        ["xpath=//div[@id='_5productBlock25658890']/div/div/div[3]/a/img", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d010ce30-7a46-4264-b4e5-479a40460dc6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["04f963fd-630d-49ab-b566-693ba545c70f"]
+  }],
+  "urls": ["https://pigu.lt/"],
+  "plugins": []
+}
